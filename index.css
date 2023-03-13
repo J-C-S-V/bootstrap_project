@@ -17,5 +17,22 @@ body {
 }
 
 .carousel-inner {
-  max-height: 39rem;
+  max-height: 10rem;
+}
+
+@media (max-width: 768px) {
+  #intro {
+    width: 90% !important;
+  }
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
 }

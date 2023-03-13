@@ -17,13 +17,67 @@ body {
 }
 
 .carousel-inner {
-  max-height: 10rem;
+  max-height: 29rem;
 }
 
 .mapa {
-  background-image: url(./img/mapa.png);
+  background-image: url('./img/mapa.png');
   width: 100%;
   height: 500px;
+}
+
+#local {
+  background-color: #f3f3f3;
+  padding-bottom: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+#local-numbers div {
+  padding: 0 20px 0 0;
+  height: 48px;
+}
+
+#local-numbers div:not(:last-child) {
+  border-right: 2px solid #3f3f3f;
+}
+
+#local-numbers div:not(:first-child) {
+  padding-left: 20px;
+}
+
+#local-numbers p {
+  margin: 0;
+}
+
+#bg-contacts {
+  position: relative;
+  top: -130px;
+}
+
+#contact-section {
+  background-color: #1b2a4e;
+  min-height: 500px;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -39,6 +93,11 @@ body {
   .servicio-fila {
     width: 100% !important;
     text-align: center;
+  }
+
+  #bg-contacts {
+    position: relative;
+    top: -110px;
   }
 }
 

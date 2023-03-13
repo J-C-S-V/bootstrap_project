@@ -9,11 +9,14 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="index.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="index.js" defer></script>
     <title>Bootstrap page</title>
   </head>
   <body>
@@ -195,25 +198,70 @@
           Small team with <span class="text-primary">big results</span>
         </h1>
         <p class="fs-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          officiis dolorum consectetur omnis libero aliquid harum delectus
-          eveniet labore culpa, accusamus in a reiciendis possimus nisi
-          laboriosam nobis. Quisquam, quas.
+          We always look for the right people to work with us. If you feel ready
+          for this challenge, we look forward to having you join us.
         </p>
       </div>
       <div class="mt-5 text-center">
         <img
           class="img-fluid"
-          src="./img/bootstrap_img_2.jpg"
+          src="./img/equipo.jpg"
           alt="team"
           width="250px"
           height="50px"
         />
       </div>
 
-      <div id="local">
-        <div class="mapa">
-          <div></div>
+      <div id="local" class="border-top border-2">
+        <div class="mapa"></div>
+        <div>
+          <div class="wrapper">
+            <h2>Located in Miami, Florida</h2>
+            <h2 class="text-primary mb-4" id="typewriter"></h2>
+            <p class="fs-5 text-body">
+              We chose Miami for our office with the aim of being close to our
+              clients. We are located in Brickell, the heart and financial
+              center of Miami, close to the best restaurants, shops, and only 15
+              minutes from the beaches. Visit us and you won't regret it!
+            </p>
+            <section class="d-flex" id="local-numbers">
+              <div>
+                <p class="text-primary fs-5">248</p>
+                <p>Sun days</p>
+              </div>
+              <div>
+                <p class="text-primary fs-5">100%</p>
+                <p>Approved</p>
+              </div>
+              <div>
+                <p class="text-primary fs-5">24 °C</p>
+                <p>Temperature</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact-section"
+      class="border-bottom border-secondary border-2"
+    >
+      <div id="bg-contacts">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,96L80,117.3C160,139,320,181,480,202.7C640,224,800,224,960,202.7C1120,181,1280,139,1360,117.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="container" id="form-container">
+        <div class="form-title">
+          <div><img src="" alt="" /></div>
+          <h2>Contacts</h2>
+          <p>We are here to make your projects come true</p>
         </div>
       </div>
     </section>

@@ -9,6 +9,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="index.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -48,10 +52,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#form-title">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -72,7 +76,7 @@
       </div>
     </nav>
 
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
           <img
@@ -137,7 +141,7 @@
           class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
         >
           <img
-            src="./img/bootstrap_img_1.jpg"
+            src="./img/development.png"
             alt="development"
             width="180"
             height="160"
@@ -151,49 +155,48 @@
           class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
         >
           <img
-            src="./img/bootstrap_img_1.jpg"
+            src="./img/communication.png"
             alt="development"
             width="180"
             height="160"
           />
           <div>
-            <h3 class="fs-5 mt-4 px-4 pb-1">Development</h3>
-            <p class="px-4">Web development, mobile and e-commerce</p>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Communication</h3>
+            <p class="px-4">
+              Designing a communication plan for your customers.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+        >
+          <img src="./img/seo.png" alt="development" width="180" height="160" />
+          <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">SEO</h3>
+            <p class="px-4">We analyze the efficiency and optimize websites.</p>
           </div>
         </div>
         <div
           class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
         >
           <img
-            src="./img/bootstrap_img_1.jpg"
+            src="./img/branding.png"
             alt="development"
             width="180"
             height="160"
           />
           <div>
-            <h3 class="fs-5 mt-4 px-4 pb-1">Development</h3>
-            <p class="px-4">Web development, mobile and e-commerce</p>
-          </div>
-        </div>
-        <div
-          class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
-        >
-          <img
-            src="./img/bootstrap_img_1.jpg"
-            alt="development"
-            width="180"
-            height="160"
-          />
-          <div>
-            <h3 class="fs-5 mt-4 px-4 pb-1">Development</h3>
-            <p class="px-4">Web development, mobile and e-commerce</p>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Branding</h3>
+            <p class="px-4">
+              Design, conceptualization, and implementation of digital products.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="w-75 m-auto text-center" id="equipo">
+      <div class="w-75 m-auto text-center" id="team">
         <h1 class="mb-5 fs-2">
           Small team with <span class="text-primary">big results</span>
         </h1>
@@ -203,13 +206,7 @@
         </p>
       </div>
       <div class="mt-5 text-center">
-        <img
-          class="img-fluid"
-          src="./img/equipo.jpg"
-          alt="team"
-          width="250px"
-          height="50px"
-        />
+        <img class="img-fluid" src="./img/team.jpg" alt="team" />
       </div>
 
       <div id="local" class="border-top border-2">
@@ -306,10 +303,25 @@
             ></textarea>
           </div>
           <div class="mb-3">
-            <button class="btn btn-primary w-100 fs-5">Send message</button>
+            <button type="button" class="btn btn-primary w-100 fs-5">
+              Send message
+            </button>
           </div>
         </form>
       </div>
     </section>
+    <footer
+      class="w-100 d-flex align-items-center justify-content-center flex-wrap"
+    >
+      <p class="fs-5 px-3 pt-3">Expert J. &copy; All rights reserved 2023</p>
+      <div id="icons">
+        <a href="https://github.com/J-C-S-V"><i class="bi bi-github"></i></a
+        ><a href="https://twitter.com/juansan0"><i class="bi bi-twitter"></i></a
+        ><a
+          href="https://www.linkedin.com/in/juan-carlos-sanchez-vargas-a308b014b/"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -67,6 +67,36 @@ body {
   position: relative;
 }
 
+#form-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fbfafa;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+#form-title {
+  color: #3f3f3f;
+}
+
+footer {
+  background-color: #1d2a4e;
+  min-height: 100px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#icons i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+
 @media screen and (max-width: 1200px) {
   #local {
     flex-wrap: wrap;
@@ -82,11 +112,11 @@ body {
 
 @media (max-width: 768px) {
   #intro,
-  #equipo {
+  #team {
     width: 90% !important;
   }
 
-  #equipo p {
+  #team p {
     display: none;
   }
 

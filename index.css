@@ -20,10 +20,22 @@ body {
   max-height: 10rem;
 }
 
+.mapa {
+  background-image: url(./img/mapa.png);
+  width: 100%;
+  height: 500px;
+}
+
 @media (max-width: 768px) {
-  #intro {
+  #intro,
+  #equipo {
     width: 90% !important;
   }
+
+  #equipo p {
+    display: none;
+  }
+
   .servicio-fila {
     width: 100% !important;
     text-align: center;
